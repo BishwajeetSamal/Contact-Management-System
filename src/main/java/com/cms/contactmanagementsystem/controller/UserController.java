@@ -33,7 +33,6 @@ public class UserController {
 
     @PostMapping("/register")
     public RestResponse userRegister(@RequestBody RegisterDto registerDto) {
-
         try {
             return userService.register(registerDto);
         } catch (AlreadyExistException e) {

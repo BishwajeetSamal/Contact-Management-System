@@ -102,7 +102,6 @@ public class UserServiceImpl implements UserService {
         try {
 
             Users users = userRepository.findByEmailIdIgnoreCase(emailId);
-
             return users;
 
         } catch (Exception e) {
